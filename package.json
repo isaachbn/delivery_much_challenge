@@ -1,11 +1,12 @@
 {
   "name": "delivery_much_challenge",
   "version": "1.0.0",
-  "main": "./src/app.js",
+  "main": "./src/server.js",
   "license": "MIT",
   "scripts": {
-    "development": "nodemon -r dotenv/config --inspect=0.0.0.0 ./src/app.js",
-    "production": "node -r dotenv/config ./src/app.js"
+    "development": "nodemon -r dotenv/config --inspect=0.0.0.0 ./src/server.js",
+    "production": "node -r dotenv/config ./src/server.js",
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -14,6 +15,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "jest": "^25.3.0",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
   }
 }

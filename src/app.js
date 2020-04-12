@@ -13,6 +13,4 @@ app.get('/recipes', function (request, response) {
     response.status(200).json(request.body);
 });
 
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!');
-});
+module.exports = app;
