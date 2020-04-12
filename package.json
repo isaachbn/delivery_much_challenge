@@ -4,12 +4,13 @@
   "main": "./src/app.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --inspect=0.0.0.0",
-    "prod": "node ./src/app.js"
+    "development": "nodemon -r dotenv/config --inspect=0.0.0.0 ./src/app.js",
+    "production": "node -r dotenv/config ./src/app.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "devDependencies": {

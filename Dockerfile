@@ -1,16 +1,14 @@
 FROM node:12-alpine
 
-ARG NODE_ENV=development
-ENV NODE_ENV=${NODE_ENV}
-
-WORKDIR /usr/src/app
+WORKDIR /home/node/app
 
 COPY package*.json ./
+COPY yarn.lock ./
 
 RUN yarn install
 
 COPY . .
 
-CMD [ "yarn", "prod" ]
+CMD ["yarn", "development"]
 
 EXPOSE 3000
