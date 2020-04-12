@@ -5,10 +5,10 @@ WORKDIR /home/node/app
 COPY package*.json ./
 COPY yarn.lock ./
 
-RUN yarn install
+RUN yarn install --production
 
 COPY . .
 
-CMD ["yarn", "development"]
+CMD ["yarn", "production"]
 
 EXPOSE 3000

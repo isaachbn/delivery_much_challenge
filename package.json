@@ -4,7 +4,7 @@
   "main": "./src/server.js",
   "license": "MIT",
   "scripts": {
-    "development": "nodemon -r dotenv/config --inspect=0.0.0.0 ./src/server.js",
+    "development": "nodemon -r dotenv/config --inspect=0.0.0.0",
     "production": "node -r dotenv/config ./src/server.js",
     "test": "jest"
   },
