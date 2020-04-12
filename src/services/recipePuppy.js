@@ -8,7 +8,6 @@ module.exports = async function recipePuppyExternal(request, response, next) {
         keywords: i.split(','),
         recipes: []
     };
-    const gif = '';
     try {
         const recipePuppyResponse = await recipePuppy.get(`/api/?i=${all.keywords.join(', ')}`);
         for (const data of recipePuppyResponse.data.results) {
