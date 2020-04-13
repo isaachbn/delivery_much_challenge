@@ -25,6 +25,7 @@ curl --request GET --url 'http://localhost:3000/recipes/?i=onions%2Capple'
 
 ### Run as development mode
 ```cmd
+yarn install
 yarn development
 ```
 
